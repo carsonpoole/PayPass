@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "PayPass",
+  "description": "This extension gets you New York Times & Wall Street Journal Articles for Free",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "index.html"
+  },
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "browsingData",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
